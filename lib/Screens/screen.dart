@@ -3,6 +3,7 @@ import 'package:flutter_ui_card_collections/Cards/card_1.dart';
 import 'package:flutter_ui_card_collections/Cards/card_2.dart';
 import 'package:flutter_ui_card_collections/Cards/card_3.dart';
 import 'package:flutter_ui_card_collections/Cards/card_4.dart';
+import 'package:flutter_ui_card_collections/Cards/card_5.dart';
 import 'package:gap/gap.dart';
 
 class Screen extends StatelessWidget {
@@ -24,6 +25,8 @@ class Screen extends StatelessWidget {
             Card3(),
             Gap(16),
             Card4(),
+            Gap(16),
+            Card5(),
           ],
         ),
       ),
