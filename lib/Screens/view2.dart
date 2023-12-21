@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_card_collections/Cards/card_10.dart';
 import 'package:flutter_ui_card_collections/Cards/card_7.dart';
 import 'package:flutter_ui_card_collections/Cards/card_8.dart';
 import 'package:flutter_ui_card_collections/Cards/card_9.dart';
@@ -19,7 +20,9 @@ class View2 extends StatelessWidget {
             Gap(30),
             Card8(),
             Gap(30),
-            Card9()
+            Card9(),
+            Gap(30),
+            Card10(),
 
           ],
         ),
