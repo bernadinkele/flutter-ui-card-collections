@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_card_collections/Screens/screen.dart';
+import 'package:flutter_ui_card_collections/Views/view1.dart';
 
 void main() {
  runApp(const App());
