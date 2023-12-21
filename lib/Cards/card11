@@ -1,0 +1,111 @@
+import 'package:flutter/material.dart';
+import 'package:gcal/domain/export.domain.dart';
+
+class card11 extends StatefulWidget {
+  final OrderCart cart;
+  const card11({super.key, required this.cart});
+
+  @override
+  State<card11> createState() => _card11State();
+}
+
+class _card11State extends State<card11> {
+  bool isClosed = false;
+  int availableSpots =
+      10; // Remplacez cette valeur par le nombre de places disponibles réel
+
+  @override
+  Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
+
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.vertical(
+          top: Radius.circular(5),
+          bottom: Radius.circular(5),
+        ),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.3),
+            spreadRadius: 2,
+            blurRadius: 5,
+            offset: const Offset(0, 3),
+          ),
+        ],
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 100,
+            height: 100,
+            child: ClipRRect(
+              borderRadius: const BorderRadius.horizontal(
+                left: Radius.circular(10),
+                right: Radius.circular(10),
+              ),
+              child: Image.network(
+                widget.cart.order.image,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        widget.cart.order.name,
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      Row(
+                        children: [
+                          Text('4.7'),
+                          Icon(
+                            Icons.star_border_outlined,
+                            color: Colors.yellow,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Text(
+                    'Description du parking qui peut être assez longue et se terminer par des points de suspension si elle est trop longue.',
+                    maxLines: availableSpots == 0 ? 1 : 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        isClosed ? 'Fermé | 150m' : 'Ouvert | 150m',
+                        style: TextStyle(
+                          color: isClosed ? Colors.red : Colors.green,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text('$availableSpots places'),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
