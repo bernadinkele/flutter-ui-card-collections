@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gcal/domain/export.domain.dart';
 
 class card11 extends StatefulWidget {
-  final OrderCart cart;
-  const card11({super.key, required this.cart});
+  const card11({super.key, required ElementData element});
 
   @override
   State<card11> createState() => _card11State();
@@ -47,7 +45,7 @@ class _card11State extends State<card11> {
                 right: Radius.circular(10),
               ),
               child: Image.network(
-                widget.cart.order.image,
+                widget.element.image,
                 fit: BoxFit.cover,
               ),
             ),
@@ -62,7 +60,7 @@ class _card11State extends State<card11> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        widget.cart.order.name,
+                        widget.element.name,
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                       Row(
