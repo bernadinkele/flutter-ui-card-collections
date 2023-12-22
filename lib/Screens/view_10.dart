@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_card_collections/Cards/card_25.dart';
+import 'package:flutter_ui_card_collections/Cards/card_26.dart';
 import 'package:gap/gap.dart';
 class View10 extends StatelessWidget {
   const View10({Key? key}) : super(key: key);
@@ -14,6 +15,8 @@ class View10 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Card25(),
+            Gap(30),
+            Card26(),
             Gap(30),
 
 
