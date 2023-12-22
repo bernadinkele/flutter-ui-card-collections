@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_card_collections/Cards/card_23.dart';
+import 'package:flutter_ui_card_collections/Cards/card_24.dart';
 import 'package:gap/gap.dart';
 class View9 extends StatelessWidget {
   const View9({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class View9 extends StatelessWidget {
           children: [
             Card23(),
             Gap(30),
-
+            Card24()
 
           ],
         ),
