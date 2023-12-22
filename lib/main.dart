@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_card_collections/Screens/view_10.dart';
-import 'package:flutter_ui_card_collections/Screens/view_9.dart';
+import 'package:flutter_ui_card_collections/Screens/view_11.dart';
 
 
 void main() {
@@ -14,7 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false, 
-      home: View10(),
+      home: View11(),
     );
   }
 }
