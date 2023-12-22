@@ -28,22 +28,15 @@ class Card14 extends StatelessWidget {
               color: const Color(0xFF29272E),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
             ),
-            child: const Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  '07:00 PM',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 13,
-                    fontFamily: 'Inter',
-                    fontWeight: FontWeight.w500,
-                    height: 0,
-                  ),
-                ),
-              ],
+            child: const Text(
+              '07:00 PM',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 13,
+                fontFamily: 'Inter',
+                fontWeight: FontWeight.w500,
+                height: 0,
+              ),
             ),
           ),
           const Gap(16),

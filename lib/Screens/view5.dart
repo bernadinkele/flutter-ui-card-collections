@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_card_collections/Cards/card_13.dart';
-import 'package:flutter_ui_card_collections/Cards/card_14.dart';
+import 'package:flutter_ui_card_collections/Cards/card_15.dart';
 import 'package:gap/gap.dart';
-class View4 extends StatelessWidget {
-  const View4({Key? key}) : super(key: key);
+class View5 extends StatelessWidget {
+  const View5({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +13,9 @@ class View4 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Card13(),
+            Card15(),
             Gap(30),
-            Card14()
+
           ],
         ),
       ),
