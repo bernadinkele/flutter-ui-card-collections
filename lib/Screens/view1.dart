@@ -7,8 +7,8 @@ import 'package:flutter_ui_card_collections/Cards/card_5.dart';
 import 'package:flutter_ui_card_collections/Cards/card_6.dart';
 import 'package:gap/gap.dart';
 
-class Screen extends StatelessWidget {
-  const Screen({super.key});
+class View1 extends StatelessWidget {
+  const View1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

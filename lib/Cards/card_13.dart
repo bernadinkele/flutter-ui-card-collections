@@ -66,26 +66,29 @@ class Card13 extends StatelessWidget {
             )),
 
           ),
-          Container(
+          SizedBox(
             width: double.infinity,
             height: 51,
-            padding: const EdgeInsets.all(16),
-            decoration: ShapeDecoration(
-              color: const Color(0xFFE8E1FF),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
+            child: FilledButton(
+              onPressed: null,
+              style: ButtonStyle(
+                  padding: const MaterialStatePropertyAll(EdgeInsets.all(16)),
+                  backgroundColor: const MaterialStatePropertyAll(Color(0xFFE8E1FF),),
+                  shape: MaterialStatePropertyAll(RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),)
               ),
-            ),
-            child: const Text(
-              'Continue',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Color(0xFF7949FF),
-                fontSize: 16,
-                fontFamily: 'Inter',
-                fontWeight: FontWeight.w600,
-                height: 0,
-                letterSpacing: -0.64,
+              child: const Text(
+                'Continue',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Color(0xFF7949FF),
+                  fontSize: 16,
+                  fontFamily: 'Inter',
+                  fontWeight: FontWeight.w600,
+                  height: 0,
+                  letterSpacing: -0.64,
+                ),
               ),
             ),
           )

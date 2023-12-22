@@ -78,15 +78,17 @@ class Card28 extends StatelessWidget {
          ,
 
           const Gap(24),
-          Container(
+          SizedBox(
             width: 168,
             height: 41,
-            decoration: BoxDecoration(
-              color: const Color(0xFF7949FF),
-              borderRadius: BorderRadius.circular(8)
-            ),
-            child: const Center(
-              child: Text(
+            child: FilledButton(
+              onPressed: null,
+              style: ButtonStyle(
+                  padding: const MaterialStatePropertyAll( EdgeInsets.all(12),),
+                  backgroundColor: const MaterialStatePropertyAll(Color(0xFF7949FF),),
+                  shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
+              ),
+              child: const Text(
                 'Follow',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -98,8 +100,9 @@ class Card28 extends StatelessWidget {
                   letterSpacing: -0.56,
                 ),
               ),
-            )
+            ),
           )
+
         ],
       ),
     );

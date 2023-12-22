@@ -52,27 +52,31 @@ class Card17 extends StatelessWidget {
             ),
           ),
           const Gap(16),
-          Container(
+          SizedBox(
             width: double.infinity,
             height: 51,
-            padding: const EdgeInsets.all(16),
-            decoration: ShapeDecoration(
-              color: const Color(0xFF7949FF),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-            ),
-            child:const Text(
-              'Continue',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-                fontFamily: 'Inter',
-                fontWeight: FontWeight.w600,
-                height: 0,
-                letterSpacing: -0.64,
+            child: FilledButton(
+              onPressed: null,
+              style: ButtonStyle(
+                  padding:const MaterialStatePropertyAll(EdgeInsets.all(16),),
+                  backgroundColor: const MaterialStatePropertyAll(Color(0xFF7949FF),),
+                  shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
+              ),
+              child: const Text(
+                'Continue',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontFamily: 'Inter',
+                  fontWeight: FontWeight.w600,
+                  height: 0,
+                  letterSpacing: -0.64,
+                ),
               ),
             ),
           )
+
         ],
       ),
     );

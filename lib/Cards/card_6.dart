@@ -50,23 +50,29 @@ class Card6 extends StatelessWidget {
             ),
           ),
          const Gap(8),
-         Container(
+         SizedBox(
            width: 65,
            height: 41,
-           padding: const EdgeInsets.all(12),
-           decoration: ShapeDecoration(
-             color: const Color(0xFF7949FF),
-             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+           child: FilledButton(
+
+               onPressed: null,
+               style: ButtonStyle(
+                 padding:const MaterialStatePropertyAll(EdgeInsets.all(12)),
+                 backgroundColor: const MaterialStatePropertyAll(Color(0xFF7949FF)),
+                 shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),),
+
+               ),
+               child:const Text("Follow", style: TextStyle(
+                 color: Colors.white,
+                 fontSize: 14,
+                 fontFamily: 'Inter',
+                 fontWeight: FontWeight.w600,
+                 height: 0,
+                 letterSpacing: -0.56,
+               ),),
            ),
-           child: const Text("Follow", style: TextStyle(
-             color: Colors.white,
-             fontSize: 14,
-             fontFamily: 'Inter',
-             fontWeight: FontWeight.w600,
-             height: 0,
-             letterSpacing: -0.56,
-           ),),
          )
+        
           
         ],
       ),

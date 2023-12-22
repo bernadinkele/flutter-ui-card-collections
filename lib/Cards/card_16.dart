@@ -63,13 +63,15 @@ class Card16 extends StatelessWidget {
                   ),
                 ),
                 const Gap(8),
-                Container(
-                  width: 65,
-                  height: 41,
-                  padding: const EdgeInsets.all(12),
-                  decoration: ShapeDecoration(
-                    color: const Color(0xFF7949FF),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+
+                FilledButton(
+                  onPressed: null,
+
+                  style: ButtonStyle(
+
+                    backgroundColor: const MaterialStatePropertyAll(Color(0xFF7949FF),),
+
+                    shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),)
                   ),
                   child: const Text("Follow", style: TextStyle(
                     color: Colors.white,
